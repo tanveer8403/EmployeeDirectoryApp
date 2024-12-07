@@ -39,9 +39,10 @@ class EmployeeViewModel: ObservableObject {
                 }
                 
                 // Log raw JSON for debugging
-                if let rawJSON = String(data: data, encoding: .utf8) {
+               /*/ if let rawJSON = String(data: data, encoding: .utf8) {
                     print("Raw JSON: \(rawJSON)")
                 }
+                */
                 
                 do {
                     let response = try JSONDecoder().decode(EmployeesResponse.self, from: data)
